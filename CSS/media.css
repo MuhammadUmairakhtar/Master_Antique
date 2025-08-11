@@ -1,28 +1,33 @@
 @media (max-width: 768px) {
 
     /* For navbar */
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background: var(--primary-color);
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
-    }
-
-    .nav-links.active {
+    .hamburger {
         display: flex;
     }
 
-    .hamburger {
-        display: block;
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0%;
+        opacity: 0;
+        flex-direction: column;
+        background-color: #7b5e57;
+        width: 200px;
+        padding: 1rem;
+        gap: 1.5rem;
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        opacity: 1;
     }
 
     /* For Carousel */
     .slide img {
-    height: 70vh;
-  }
+        height: 70vh;
+    }
+
     .slide {
         aspect-ratio: 3 / 1
     }
@@ -40,15 +45,24 @@
     }
 
 
+    .about-container{
+        flex-direction: column;
+    }
 
 
     .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .social-icons {
-    justify-content: center;
-  }
+        flex-direction: column;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .footer-Section-main{
+        gap: 15px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
 
 
 
@@ -59,12 +73,22 @@
 
 
     .contact-container {
-            flex-direction: column;
-            align-items: center;
-        }
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-card{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
-@media (prefers-reduced-motion: reduce){
-    .carousel-track{transition:none}
-  }
+@media (prefers-reduced-motion: reduce) {
+    .carousel-track {
+        transition: none
+    }
+}

@@ -1,11 +1,11 @@
 // Navbar Hamburger functionality
 const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('navLinks');
+const navLinks = document.getElementById('nav-links');
 
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  hamburger.classList.toggle('active');
+});
 
 // Carousel functionality
     // const slides = document.querySelector(".slides");

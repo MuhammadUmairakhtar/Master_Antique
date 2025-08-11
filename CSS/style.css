@@ -26,36 +26,56 @@ body {
 
 /* Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--primary-color);
-    padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7b5e57; /* Antique brown */
+  padding: 1rem 2rem;
 }
 
-.navbar .logo {
-    color: white;
-    font-weight: bold;
-    font-size: 1.5em;
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f8e8d0; /* Antique gold */
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
 }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
+.nav-links li a {
+  text-decoration: none;
+  color: #f8e8d0;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
+.nav-links li a:hover {
+  color: #ffdf99;
+}
+
+/* Hamburger Menu */
 .hamburger {
-    display: none;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 0.3rem;
 }
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #f8e8d0;
+  border-radius: 2px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+}
+
 
 /* carousel */
 .carousel {
@@ -308,10 +328,13 @@ body {
 
 
 footer {
-  background: #111;
-  color: #fff;
+  background: var(--primary-color);
+  color: #f8e8d0;
   padding: 50px 20px 20px;
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .footer-container {
@@ -324,27 +347,26 @@ footer {
 }
 
 .footer-section {
-  flex: 1 1 250px;
+  flex: 1 1 50px;
 }
 
 .footer-Section-main{
     display: flex;
     flex-direction: column;
     gap: 5px;
-
 }
 
 .footer-section h3 {
   margin-bottom: 15px;
   font-size: 20px;
-  color: #00d9ff;
+  color: var(--accent-color);
 }
 
 .footer-section p,
 .footer-section ul,
 .footer-section a {
   font-size: 14px;
-  color: #bbb;
+  color: #f8e8d0;
 }
 
 .footer-section ul {
@@ -362,26 +384,26 @@ footer {
 }
 
 .footer-section ul li a:hover {
-  color: #00d9ff;
+  color: var(--accent-color);
 }
 
 .social-icons a {
-  color: #bbb;
+  color: #f8e8d0;
   font-size: 18px;
   margin-right: 10px;
   transition: color 0.3s;
 }
 
 .social-icons a:hover {
-  color: #00d9ff;
+  color: var(--primary-color);
 }
 
-.footer-bottom {
+.footer-bottom p {
   text-align: center;
   padding-top: 20px;
-  border-top: 1px solid #333;
+  border-top: 1px solid #f8e8d0;
   font-size: 13px;
-  color: #777;
+  color: #f8e8d0;
 }
 
 
