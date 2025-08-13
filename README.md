@@ -72,3 +72,6 @@ This project is licensed under the MIT License – feel free to use and modify i
 ```Bash
 If you want, I can also make a **shorter, more stylish** README version that looks premium for GitHub.
 ```
+---
+
+> **"Preserving the past, showcasing the beauty of history."**
